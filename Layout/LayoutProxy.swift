@@ -8,7 +8,7 @@
 
 import UIKit.UIView
 
-public class LayoutProxy {
+public class LayoutProxy: Equatable {
     public lazy var leading = property(with: view.leadingAnchor)
     public lazy var trailing = property(with: view.trailingAnchor)
     public lazy var top = property(with: view.topAnchor)
@@ -25,11 +25,15 @@ public class LayoutProxy {
     
     private let view: UIView
     
-    init(view: UIView) {
+    public init(view: UIView) {
         self.view = view
     }
     
     private func property<A: LayoutAnchor>(with anchor: A) -> LayoutProperty<A> {
         return LayoutProperty(anchor: anchor)
+    }
+    
+    public static func ==(lhs: LayoutProxy, rhs: LayoutProxy) -> Bool {
+        return lhs.view == rhs.view
     }
 }

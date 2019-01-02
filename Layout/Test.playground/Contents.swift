@@ -16,35 +16,38 @@ class MyViewController : UIViewController {
         let label = UILabel()
         label.text = "Hello World!Hello World!Hello World!Hello World!"
         
+        let content = UIView()
+        content.backgroundColor = .green
+        view.addSubview(content)
+        
+        content.box(in: view, edges: UIEdgeInsets(top: 8, left: 8, bottom: -8, right: -8))
+        
         let rect = UIView()
         rect.backgroundColor = .yellow
-        view.addSubview(rect)
+        content.addSubview(rect)
 
         rect.layout {
-            $0.width == view.widthAnchor
-            $0.height == view.heightAnchor/3
-            $0.centerX == view.centerXAnchor
-            $0.centerY == view.centerYAnchor
+            $0.width == content.widthAnchor
+            $0.height == content.heightAnchor/3
+            $0.centerX == content.centerXAnchor
+            $0.centerY == content.centerYAnchor
         }
         
         rect.addSubview(label)
         label.layout {
             $0.width == rect.widthAnchor*0.75
             $0.centerX == rect.centerXAnchor
-            $0.centerY == rect.centerYAnchor
+            $0.centerY == rect.centerYAnchor + 50
         }
         
         let line = UIView()
         line.backgroundColor = .blue
         rect.addSubview(line)
         
-        line.translatesAutoresizingMaskIntoConstraints = false
-        line.layoutProxy.centerX == rect.centerXAnchor
-        line.layoutProxy.centerY == rect.centerYAnchor - 50
-        line.layoutProxy.height == 20
-        line.layoutProxy.width.equal(to: 100)
+        line.constraintSize(width: 100, height: 20)
+        line.center(in: rect)
         
-        self.view = view
+        self.view = view        
     }
 }
 // Present the view controller in the Live View window
