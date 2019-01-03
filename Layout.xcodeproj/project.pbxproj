@@ -11,8 +11,8 @@
 		4C6911E021C83C7F006EE9B4 /* Layout.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C6911D221C83C7F006EE9B4 /* Layout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C6911EA21C83C8E006EE9B4 /* LayoutAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6911E921C83C8E006EE9B4 /* LayoutAnchor.swift */; };
 		4C6911EC21C83CAA006EE9B4 /* LayoutProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6911EB21C83CAA006EE9B4 /* LayoutProperty.swift */; };
-		4C6911EE21C83D1C006EE9B4 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6911ED21C83D1C006EE9B4 /* UIView+Extension.swift */; };
-		4C6911EF21C83D1C006EE9B4 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6911ED21C83D1C006EE9B4 /* UIView+Extension.swift */; };
+		4C6911EE21C83D1C006EE9B4 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6911ED21C83D1C006EE9B4 /* UIView+Layout.swift */; };
+		4C6911EF21C83D1C006EE9B4 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6911ED21C83D1C006EE9B4 /* UIView+Layout.swift */; };
 		4C6911F121C83D56006EE9B4 /* LayoutProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6911F021C83D56006EE9B4 /* LayoutProxy.swift */; };
 		4C6911F221C83D56006EE9B4 /* LayoutProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6911F021C83D56006EE9B4 /* LayoutProxy.swift */; };
 		4C6911F421C83DCF006EE9B4 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6911F321C83DCF006EE9B4 /* Operators.swift */; };
@@ -21,6 +21,8 @@
 		4C71C73B21C91863005FF1C9 /* LayoutAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6911E921C83C8E006EE9B4 /* LayoutAnchor.swift */; };
 		4C9F659F21CBD00A000DDFD1 /* LayoutPropertyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9F659E21CBD00A000DDFD1 /* LayoutPropertyTests.swift */; };
 		4C9F65A121CBE582000DDFD1 /* LayoutProxyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9F65A021CBE582000DDFD1 /* LayoutProxyTests.swift */; };
+		4CACEC0421DE748300AF8139 /* UIView+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CACEC0321DE748300AF8139 /* UIView+Convenience.swift */; };
+		4CACEC0521DE748300AF8139 /* UIView+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CACEC0321DE748300AF8139 /* UIView+Convenience.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,12 +43,13 @@
 		4C6911DF21C83C7F006EE9B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C6911E921C83C8E006EE9B4 /* LayoutAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutAnchor.swift; sourceTree = "<group>"; };
 		4C6911EB21C83CAA006EE9B4 /* LayoutProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutProperty.swift; sourceTree = "<group>"; };
-		4C6911ED21C83D1C006EE9B4 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		4C6911ED21C83D1C006EE9B4 /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
 		4C6911F021C83D56006EE9B4 /* LayoutProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutProxy.swift; sourceTree = "<group>"; };
 		4C6911F321C83DCF006EE9B4 /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 		4C6911F621C84500006EE9B4 /* Test.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Test.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4C9F659E21CBD00A000DDFD1 /* LayoutPropertyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutPropertyTests.swift; sourceTree = "<group>"; };
 		4C9F65A021CBE582000DDFD1 /* LayoutProxyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutProxyTests.swift; sourceTree = "<group>"; };
+		4CACEC0321DE748300AF8139 /* UIView+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Convenience.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +97,8 @@
 				4C6911E921C83C8E006EE9B4 /* LayoutAnchor.swift */,
 				4C6911EB21C83CAA006EE9B4 /* LayoutProperty.swift */,
 				4C6911F021C83D56006EE9B4 /* LayoutProxy.swift */,
-				4C6911ED21C83D1C006EE9B4 /* UIView+Extension.swift */,
+				4C6911ED21C83D1C006EE9B4 /* UIView+Layout.swift */,
+				4CACEC0321DE748300AF8139 /* UIView+Convenience.swift */,
 				4C6911F321C83DCF006EE9B4 /* Operators.swift */,
 				4C6911F621C84500006EE9B4 /* Test.playground */,
 			);
@@ -222,7 +226,8 @@
 			files = (
 				4C6911F121C83D56006EE9B4 /* LayoutProxy.swift in Sources */,
 				4C6911F421C83DCF006EE9B4 /* Operators.swift in Sources */,
-				4C6911EE21C83D1C006EE9B4 /* UIView+Extension.swift in Sources */,
+				4CACEC0421DE748300AF8139 /* UIView+Convenience.swift in Sources */,
+				4C6911EE21C83D1C006EE9B4 /* UIView+Layout.swift in Sources */,
 				4C6911EC21C83CAA006EE9B4 /* LayoutProperty.swift in Sources */,
 				4C6911EA21C83C8E006EE9B4 /* LayoutAnchor.swift in Sources */,
 			);
@@ -232,10 +237,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C6911EF21C83D1C006EE9B4 /* UIView+Extension.swift in Sources */,
+				4C6911EF21C83D1C006EE9B4 /* UIView+Layout.swift in Sources */,
 				4C9F65A121CBE582000DDFD1 /* LayoutProxyTests.swift in Sources */,
 				4C6911F521C83DCF006EE9B4 /* Operators.swift in Sources */,
 				4C71C73A21C91860005FF1C9 /* LayoutProperty.swift in Sources */,
+				4CACEC0521DE748300AF8139 /* UIView+Convenience.swift in Sources */,
 				4C71C73B21C91863005FF1C9 /* LayoutAnchor.swift in Sources */,
 				4C6911F221C83D56006EE9B4 /* LayoutProxy.swift in Sources */,
 				4C9F659F21CBD00A000DDFD1 /* LayoutPropertyTests.swift in Sources */,

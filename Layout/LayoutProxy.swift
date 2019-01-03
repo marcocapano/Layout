@@ -8,6 +8,7 @@
 
 import UIKit.UIView
 
+///A proxy object that transfers constraints to it's associated view.
 public class LayoutProxy: Equatable {
     public lazy var leading = property(with: view.leadingAnchor)
     public lazy var trailing = property(with: view.trailingAnchor)

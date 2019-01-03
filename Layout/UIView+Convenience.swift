@@ -1,29 +1,14 @@
 //
-//  UIView+Extension.swift
+//  UIView+Convenience.swift
 //  Layout
 //
-//  Created by Marco Capano on 17/12/2018.
-//  Copyright © 2018 Marco Capano. All rights reserved.
+//  Created by Marco Capano on 03/01/2019.
+//  Copyright © 2019 Marco Capano. All rights reserved.
 //
 
-import UIKit.UIView
+import UIKit
 
 public extension UIView {
-    public func layout(using closure: (LayoutProxy) -> Void) {
-        translatesAutoresizingMaskIntoConstraints = false
-        closure(LayoutProxy(view: self))
-    }
-    
-    public var layoutProxy: LayoutProxy {
-        return LayoutProxy(view: self)
-    }
-    
-}
-
-//MARK: - Convenience functions
-public extension UIView {
-    
-    
     /// Wraps the receiver inside the given view, with offsets.
     /// If the receiver is not a subview of the given view, it automatically adds it.
     ///
@@ -55,6 +40,16 @@ public extension UIView {
         
         if let height = height {
             layout { proxy in proxy.height == height }
+        }
+    }
+    
+    /// Centers the receiver on the given view.
+    ///
+    /// - Parameter view: The view you want to center to.
+    public func center(in view: UIView) {
+        layout { proxy in
+            proxy.centerX == view.centerXAnchor
+            proxy.centerY == view.centerYAnchor
         }
     }
 }
