@@ -40,6 +40,12 @@ class MyViewController : UIViewController {
             $0.centerY == rect.centerYAnchor + 50
         }
         
+        label.layout {
+            $0.width.equal(to: view.widthAnchor, multiplier: 0.5)
+            $0.centerX.equal(to: view.centerXAnchor, offsetBy: 16)
+            $0.centerY.equal(to: view.centerYAnchor)
+        }
+        
         let line = UIView()
         line.backgroundColor = .blue
         rect.addSubview(line)
