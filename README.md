@@ -67,7 +67,7 @@ The project is pretty usable but lacks some things:
 
 ## Acknowledgment
 
-The idea came from John Sundell’s article [”Building DSLs in Swift” ][1]. I found it really interesting and thought  that we see to many good ideas and starting points inside blog posts, tutorials and books and most of the times it ends here.
+The idea came from John Sundell’s article [”Building DSLs in Swift” ][1]. I found it really interesting and thought  that we see to many good ideas and starting points inside blog posts, tutorials and books and most of the times it ends there.
 Instead, they could act as fuel for many many open source projects, so I decided to continue the project and adding operators, some functions and a test suite.
 
 
