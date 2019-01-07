@@ -90,6 +90,7 @@
 		4C6911C521C83C7F006EE9B4 = {
 			isa = PBXGroup;
 			children = (
+				4C52BD1321E3A8BE009B905A /* README.md */,
 				4C6911D121C83C7F006EE9B4 /* Layout */,
 				4C6911DC21C83C7F006EE9B4 /* LayoutTests */,
 				4C6911D021C83C7F006EE9B4 /* Products */,
@@ -111,7 +112,6 @@
 				4C6911D221C83C7F006EE9B4 /* Layout.h */,
 				4C6911D321C83C7F006EE9B4 /* Info.plist */,
 				4C52BD1221E3A815009B905A /* Sources */,
-				4C52BD1321E3A8BE009B905A /* README.md */,
 				4C6911F621C84500006EE9B4 /* Test.playground */,
 			);
 			path = Layout;
