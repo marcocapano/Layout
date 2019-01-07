@@ -39,8 +39,9 @@ heightConstraint.isActive = false
 ### Set them all:
 ```swift
 label.layout {
-	$0.height.equal(to: view.heightAnchor, multiplier: 0.33)
-    $0.width.equal(to: view.widthAnchor, multiplier: 0.5)        $0.centerX.equal(to: view.centerXAnchor, offsetBy: 16)
+    $0.height.equal(to: view.heightAnchor, multiplier: 0.33)
+    $0.width.equal(to: view.widthAnchor, multiplier: 0.5)
+    $0.centerX.equal(to: view.centerXAnchor, offsetBy: 16)
     $0.centerY.equal(to: view.centerYAnchor)
 }
 ```
