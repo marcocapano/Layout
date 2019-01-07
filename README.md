@@ -10,9 +10,9 @@ A lot of different layout extensions exist out there, proposing different soluti
 Some use functions to compose layouts, some use a more functional approach,
 some use a proxy approach, some simply add syntactic sugar to the existing API’s.
 
-Sometimes though you might want to use *different approaches* to layout within the *same app*. 
+Sometimes though you might want to use **different approaches** to layout within the **same app**. 
 
-Layout doesn’t want to pick one solution and make you choose. Instead, it gives you the choice and flexibility to use whatever approach you want without adding layers of abstractions, allowing you to even pick and mix the *standard APIs* for some cases.
+Layout doesn’t want to pick one solution and make you choose. Instead, it gives you the choice and flexibility to use whatever approach you want without adding layers of abstractions, allowing you to even pick and mix the **standard APIs** for some cases.
 
 ## Usage
 Using Layout, you can
@@ -61,6 +61,7 @@ label.layout {
 The project is pretty usable but lacks some things:
 1. Tests for functional operators and UIView convenience functions
 2. Cocoapods support
+3. Travis configuration
 
 
 
