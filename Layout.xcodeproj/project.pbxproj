@@ -111,8 +111,8 @@
 				4C6911D221C83C7F006EE9B4 /* Layout.h */,
 				4C6911D321C83C7F006EE9B4 /* Info.plist */,
 				4C52BD1221E3A815009B905A /* Sources */,
-				4C6911F621C84500006EE9B4 /* Test.playground */,
 				4C52BD1321E3A8BE009B905A /* README.md */,
+				4C6911F621C84500006EE9B4 /* Test.playground */,
 			);
 			path = Layout;
 			sourceTree = "<group>";
